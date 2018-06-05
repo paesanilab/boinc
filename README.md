@@ -5,6 +5,10 @@ Documentation and configuration files for Molecules@Home
 
 The server deployment is based on https://github.com/marius311/boinc-server-docker, documentation about the deployment is available at: https://zonca.github.io/2018/03/boinc-server-jetstream.html
 
+### Administration
+
+See https://github.com/paesanilab/boinc/blob/master/ADMIN.md
+
 
 ## BOINC Client
 
