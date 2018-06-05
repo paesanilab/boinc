@@ -31,3 +31,18 @@ Then you can submit a pull request to https://github.com/paesanilab/docker-image
 
 * SSH to the machine on Jetstream that runs the BOINC server
 * execute `boinc_connect_server.sh` to get a terminal inside the Docker container which is actually running the BOINC server
+
+It is possible to submit jobs in bash or in Python,
+they should be run from the `~/project` folder inside the Docker container,
+
+* https://github.com/paesanilab/boinc/blob/master/utils/launch_job.py
+* https://github.com/paesanilab/boinc/blob/master/utils/launch_job.sh
+
+The Python script could be modified to run a large loop and launch hundreds of jobs at once.
+
+## Gather results
+
+Results will be available inside the container at `/results/boinc2docker/`, they will be organized by date in tgz format.
+
+
+
