@@ -40,6 +40,13 @@ they should be run from the `~/project` folder inside the Docker container,
 
 The Python script could be modified to run a large loop and launch hundreds of jobs at once.
 
+## Check job status and logs
+
+Access the URL of the Jetstream machine at `http://js-xxx-xxx.jetstream-cloud.org/boincserver_ops`, username is `admin`, empty password.
+You can click on any job and access its logs by clicking on `Results` and doing a query, direct link for the last 20 jobs is:
+
+http://js-xxx-xxx.jetstream-cloud.org/boincserver_ops/db_action.php?table=result&server_state=CHOOSE_ALL&outcome=CHOOSE_ALL&client_state=CHOOSE_ALL&validate_state=CHOOSE_ALL&sort_by=workunitid&sort_by_order=desc&detail=low&clauses=&nresults=20
+
 ## Gather results
 
 Results will be available inside the container at `/results/boinc2docker/`, they will be organized by date in tgz format.
