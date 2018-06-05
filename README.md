@@ -1,4 +1,4 @@
-# boinc
+# BOINC for Molecules@Home
 Documentation and configuration files for Molecules@Home
 
 ## BOINC Server
